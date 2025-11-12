@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Página Principal{% endblock %}
+
+{% block content %}
+<div class="contenedor_principal">
+    <div class="contenedor">
+        <a href="{{ url_for('ejercicio1') }}"><button>Ejercicio 1</button></a>
+    </div>
+    <div class="contenedor">
+        <a href="{{ url_for('ejercicio2') }}"><button>Ejercicio 2</button></a>
+    </div>
+</div>
+{% endblock %}

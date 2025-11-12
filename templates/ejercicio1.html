@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Formulario de Notas{% endblock %}
+
+{% block content %}
+<form method="post" class="formulario">
+    <h1>Formulario de Notas</h1>
+
+    <div class="form-group">
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" name="nota1" min="10" max="70" required>
+    </div>
+
+    <div class="form-group">
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" name="nota2" min="10" max="70" required>
+    </div>
+
+    <div class="form-group">
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3" name="nota3" min="10" max="70" required>
+    </div>
+
+    <div class="form-group">
+        <label for="asistencia">Asistencia (%):</label>
+        <input type="number" id="asistencia" name="asistencia" min="0" max="100" required>
+    </div>
+
+    <div class="boton-centro">
+        <button type="submit">Enviar</button>
+    </div>
+
+    {% if resultado %}
+        <div class="resultado">
+            <p>{{ resultado.promedio }}</p>
+            <p>{{ resultado.estado }}</p>
+        </div>
+    {% elif error %}
+        <div class="error">
+            <p>{{ error }}</p>
+        </div>
+    {% endif %}
+</form>
+{% endblock %}

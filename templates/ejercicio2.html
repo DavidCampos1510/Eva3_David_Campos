@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Ejercicio 2 - Nombres{% endblock %}
+
+{% block content %}
+<div class="ejercicio2-wrapper">
+    <form method="POST" class="ejercicio2-form">
+
+        <div class="input-group">
+            <label>Nombre 1:</label>
+            <input type="text" name="nombre1" required>
+        </div>
+
+        <div class="input-group">
+            <label>Nombre 2:</label>
+            <input type="text" name="nombre2" required>
+        </div>
+
+        <div class="input-group">
+            <label>Nombre 3:</label>
+            <input type="text" name="nombre3" required>
+        </div>
+
+        <div class="button-container">
+            <button type="submit">Enviar</button>
+        </div>
+
+        {% if resultado %}
+            <div class="resultado-container">
+                <p class="resultado">{{ resultado|safe }}</p>
+            </div>
+        {% endif %}
+    </form>
+</div>
+{% endblock %}
+
+
+

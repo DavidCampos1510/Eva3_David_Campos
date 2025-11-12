@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.contenedor_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 40px;
+}
+
+.contenedor button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-transform: capitalize;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.contenedor button:hover {
+    background-color: #0056b3;
+}
+
+
+/* static/css/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 380px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+    padding: 25px 25px 15px 25px;
+    margin: -20px -20px 0 -20px;
+    border-radius: 8px 8px 0 0;
+}
+
+form {
+    background-color: white;
+    padding: 0 25px 25px 25px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    width: 330px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    display: block;
+}
+
+input[type="number"]:focus {
+    border-color: #2196F3;
+    outline: none;
+    box-shadow: 0 0 3px rgba(33, 150, 243, 0.3);
+}
+
+button {
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    display: block;
+}
+
+button:hover {
+    background-color: #1976D2;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 0;
+    background-color: transparent;
+    text-align: left !important;
+    margin-left: 0 !important;
+}
+
+.resultado p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+}
+
+.error {
+    margin-top: 20px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.error p {
+    margin: 0;
+    color: #f44336;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+/* Estilos para el Ejercicio 2 - Nombres */
+
+/* Centrado total del contenido */
+.ejercicio2-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f6f8;
+}
+
+/* Formulario principal - más grande */
+.ejercicio2-form {
+    background-color: #ffffff;
+    padding: 35px 40px; /* Más padding */
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    width: 320px; /* Más ancho */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    top: -30px;
+}
+
+/* Grupos de input */
+.input-group {
+    margin-bottom: 20px; /* Más espacio entre inputs */
+}
+
+/* Etiquetas - CENTRADAS */
+.input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px; /* Más espacio debajo del label */
+    text-align: center;
+    color: #333;
+    font-size: 15px; /* Texto un poco más grande */
+}
+
+/* Inputs - más grandes */
+.input-group input {
+    width: 100%;
+    padding: 12px 10px; /* Más padding vertical */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes más redondeados */
+    font-size: 15px; /* Texto más grande */
+    box-sizing: border-box;
+    height: 42px; /* Altura fija más grande */
+}
+
+/* Contenedor del botón */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; /* Más espacio arriba del botón */
+}
+
+/* Botón - más grande */
+.button-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 30px; /* Más padding */
+    border-radius: 8px; /* Bordes más redondeados */
+    font-size: 16px; /* Texto más grande */
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    height: 44px; /* Altura fija */
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Texto del resultado - dentro del mismo recuadro blanco */
+.resultado {
+    font-size: 13px; /* Un poco más grande pero aún pequeño */
+    color: #000;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: normal;
+    margin: 20px 0 0 0; /* Más espacio arriba */
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 12px;
+}
